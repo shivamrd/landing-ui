@@ -32,17 +32,19 @@ const AutoFeatures = () => {
         <div className="row align-items-center">
 
           {/* LEFT TABS */}
-          <div className="col-md-5">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className={`feature-tab ${index === activeIndex ? "active" : ""}`}
-                onClick={() => setActiveIndex(index)}
-              >
-                <h5>{feature.title}</h5>
-              </div>
-            ))}
-          </div>
+          {features.map((feature, index) => (
+            <div key={index} className="feature">
+              <h5>{feature.title}</h5>
+              <img src={feature.image} alt={feature.title} />
+              <ul>
+                {feature.description.map((desc, i) => (
+                  <li key={i}>{desc}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+
+
 
           {/* RIGHT IMAGE */}
           <div className="col-md-7">
