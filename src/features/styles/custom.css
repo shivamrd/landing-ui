@@ -1,0 +1,99 @@
+/* BASE */
+body {
+  background-color: #0b1220;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+/* HERO SECTION */
+.hero-section {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(11,18,32,0.95), rgba(11,18,32,1)),
+    repeating-linear-gradient(
+      60deg,
+      rgba(59,130,246,0.08),
+      rgba(59,130,246,0.08) 1px,
+      transparent 1px,
+      transparent 38px
+    );
+  padding-top: 120px;
+}
+
+/* HERO WRAPPER */
+.hero-wrapper {
+  animation: heroFade 1.1s ease-out;
+}
+
+/* TOP LINE */
+.hero-topline {
+  font-size: 2rem;
+  color: #93c5fd;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+.hero-title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+/* GRADIENT TEXT */
+.gradient-text {
+  background: linear-gradient(90deg, #3b82f6, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+  max-width: 780px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #cbd5f5;
+  line-height: 1.7;
+}
+
+/* BUTTON GROUP */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* PRIMARY BUTTON */
+.hero-btn-primary {
+  background: linear-gradient(90deg, #2563eb, #22c55e);
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(59,130,246,0.35);
+}
+
+.hero-btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* SECONDARY BUTTON */
+.hero-btn-secondary {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* ANIMATION */
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
