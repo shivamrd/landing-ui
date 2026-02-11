@@ -25,7 +25,7 @@ body {
 
 /* TOP LINE */
 .hero-topline {
-  font-size: 2rem;
+  font-size: 4rem;
   color: #93c5fd;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
@@ -33,7 +33,7 @@ body {
 
 /* TITLE */
 .hero-title {
-  font-size: 3.8rem;
+  font-size: 5rem;
   font-weight: 800;
   line-height: 1.1;
 }
@@ -124,6 +124,9 @@ body {
   /* Muted gray-blue */
 }
 
+
+
+
 /* Custom Bullet Point */
 .feature-description-list li::before {
   content: "•";
@@ -180,6 +183,32 @@ body {
 
 
 /* Footer.css */
+
+
+.logos-section {
+  padding: 60px 0;
+ ;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.logo-item {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6c757d;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.logo-item:hover {
+  opacity: 1;
+}
 
 /* Logo and tagline */
 .footer-logo {
