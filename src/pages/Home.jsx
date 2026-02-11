@@ -1,7 +1,7 @@
 import MainLayout from "../Layout/MainLayout";
-import Hero from "../sections/Home/Hero";
-import Logos from "../sections/Home/Logos";
-import AutoFeatures from "../sections/Home/AutoFeatures";
+import Hero from "../sections/Home/hero/Hero";
+import Logos from "../sections/Home/logos/Logos";
+import AutoFeatures from "../sections/Home/autoFeature/AutoFeatures";
 const Home = () => {
   return (
     <>
