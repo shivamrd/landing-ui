@@ -1,66 +1,15 @@
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
-//       <div className="container">
-//         {/* Logo */}        <a className="navbar-brand fw-semibold fs-4" href="#">
-//           Techno<span className="text-primary">Hunk</span>
-//         </a>
-
-//         <button
-//           className="navbar-toggler"
-//           type="button"
-//           data-bs-toggle="collapse"
-//           data-bs-target="#navMenu"
-//         >
-//           <span className="navbar-toggler-icon"></span>
-//         </button>
-
-//         <div className="collapse navbar-collapse" id="navMenu">
-//           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-//             <li className="nav-item dropdown">
-//               <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-//                 Industries
-//               </a>
-//             </li>
-//             <li className="nav-item dropdown">
-//               <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-//                 Resources
-//               </a>
-//             </li>
-//             <li className="nav-item">
-//               <a className="nav-link" href="#">Pricing</a>
-//             </li>
-//             <li className="nav-item dropdown">
-//               <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-//                 Company
-//               </a>
-//             </li>
-//           </ul>
-
-//           <div className="d-flex gap-3">
-//             <a className="btn btn-outline-light" href="#">Login</a>
-//             <button className="btn btn-outline-light">Get in Touch</button>
-//             <button className="btn btn-primary landing-btn">Start for Free</button>
-//           </div>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-
-
+import "./Navbar.css"
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
       <div className="container">
+
         {/* Logo */}
         <a className="navbar-brand fw-semibold fs-4" href="#">
           Techno<span className="text-primary">Hunk</span>
         </a>
 
+        {/* Mobile Toggle */}
         <button
           className="navbar-toggler"
           type="button"
@@ -71,11 +20,13 @@ const Navbar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navMenu">
+
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-            {/* Industries Dropdown */}
-            <li className="nav-item dropdown">
+
+            {/* ================= INDUSTRIES ================= */}
+            <li className="nav-item dropdown landing-dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle landing-nav-link"
                 href="#"
                 id="industriesDropdown"
                 role="button"
@@ -84,23 +35,49 @@ const Navbar = () => {
               >
                 Industries
               </a>
-              <ul className="dropdown-menu" aria-labelledby="industriesDropdown">
+
+              <ul
+                className="dropdown-menu landing-menu"
+                aria-labelledby="industriesDropdown"
+              >
+                <li className="dropdown-header">SOLUTIONS</li>
+
                 <li>
-                  <a className="dropdown-item" href="#tech">Tech</a>
+                  <a className="landing-item" href="#finance">
+                    <span className="menu-icon">🏦</span>
+                    <div>
+                      <div className="menu-title">
+                        Agentic Document Extraction in Finance
+                      </div>
+                      <div className="menu-desc">
+                        Turn financial documents into structured insights
+                      </div>
+                    </div>
+                  </a>
                 </li>
+
                 <li>
-                  <a className="dropdown-item" href="#finance">Finance</a>
+                  <a className="landing-item" href="#health">
+                    <span className="menu-icon">🏥</span>
+                    <div>
+                      <div className="menu-title">
+                        Agentic Document Extraction in Healthcare
+                      </div>
+                      <div className="menu-desc">
+                        Automate patient intake & medical forms
+                      </div>
+                    </div>
+                  </a>
                 </li>
-                <li>
-                  <a className="dropdown-item" href="#health">Health</a>
-                </li>
+
               </ul>
             </li>
 
-            {/* Resources Dropdown */}
-            <li className="nav-item dropdown">
+
+            {/* ================= RESOURCES ================= */}
+            <li className="nav-item dropdown landing-dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle landing-nav-link"
                 href="#"
                 id="resourcesDropdown"
                 role="button"
@@ -109,37 +86,36 @@ const Navbar = () => {
               >
                 Resources
               </a>
-              <ul className="dropdown-menu" aria-labelledby="resourcesDropdown">
-                <li>
-                  <a className="dropdown-item" href="#docs">Docs</a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#blogs">Blogs</a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#webinars & event">Webinars & Events</a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#become a builder">Become a Builder</a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#trust center">Trust Center</a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#discord">Discord</a>
-                </li>
+
+              <ul
+                className="dropdown-menu landing-menu-resources"
+                aria-labelledby="resourcesDropdown"
+              >
+                <li className="dropdown-header">RESOURCES</li>
+
+                <li><a className="landing-simple-item" href="#docs">📘 Docs</a></li>
+                <li><a className="landing-simple-item" href="#blogs">📰 Blogs</a></li>
+                <li><a className="landing-simple-item" href="#webinars">🎤 Webinars</a></li>
+                <li><a className="landing-simple-item" href="#trust">🔒 Trust Center</a></li>
+                <li><a className="landing-simple-item" href="#builder">👨‍💻 Become a Builder</a></li>
+                <li><a className="landing-simple-item" href="#discord">💬 Discord</a></li>
+
               </ul>
             </li>
 
-            {/* Single Link */}
+
+            {/* ================= PRICING ================= */}
             <li className="nav-item">
-              <a className="nav-link" href="#pricing">Pricing</a>
+              <a className="nav-link landing-nav-link" href="#pricing">
+                Pricing
+              </a>
             </li>
 
-            {/* Company Dropdown */}
-            <li className="nav-item dropdown">
+
+            {/* ================= COMPANY ================= */}
+            <li className="nav-item dropdown landing-dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle landing-nav-link"
                 href="#"
                 id="companyDropdown"
                 role="button"
@@ -148,25 +124,31 @@ const Navbar = () => {
               >
                 Company
               </a>
-              <ul className="dropdown-menu" aria-labelledby="companyDropdown">
-                <li>
-                  <a className="dropdown-item" href="#about">About Us</a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#careers">Careers</a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#contact">Contact</a>
-                </li>
+
+              <ul
+                className="dropdown-menu landing-menu-company"
+                aria-labelledby="companyDropdown"
+              >
+                <li className="dropdown-header">COMPANY</li>
+
+                <li><a className="landing-simple-item" href="#about">ℹ️ About Us</a></li>
+                <li><a className="landing-simple-item" href="#careers">🚀 Careers</a></li>
+                <li><a className="landing-simple-item" href="#contact">📞 Contact Us</a></li>
+
               </ul>
             </li>
+
           </ul>
 
+          {/* ================= RIGHT BUTTONS ================= */}
           <div className="d-flex gap-3">
             <a className="btn btn-outline-light" href="#login">Login</a>
             <button className="btn btn-outline-light">Get in Touch</button>
-            <button className="btn btn-primary landing-btn">Start for Free</button>
+            <button className="btn btn-primary landing-btn">
+              Start for Free
+            </button>
           </div>
+
         </div>
       </div>
     </nav>
@@ -174,3 +156,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
