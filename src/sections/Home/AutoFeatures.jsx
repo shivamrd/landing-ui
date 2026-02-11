@@ -62,7 +62,7 @@
 
 
 import { useEffect, useState } from "react";
-import { features } from "../data/features";
+import { features } from "../../data/features";
 
 const AutoFeatures = () => {
   const [activeIndex, setActiveIndex] = useState(0);
