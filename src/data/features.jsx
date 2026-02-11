@@ -6,7 +6,7 @@ export const features = [
       "Zero-shot parsing of PDFs, scans, and tables without layout-specific training.",
       "Capture semantic relationships beyond OCR including form fields and layouts."
     ],
-    image: "/images/feature1.jpg"
+    image: "/assets/images/feature-images/Chart-table-image.webp"
   },
   {
     title: "Agentic Document Understanding",
@@ -15,7 +15,7 @@ export const features = [
       "Extract structured insights from complex real-world data.",
       "Built-in auditability and traceability."
     ],
-    image: "/images/feature2.png"
+    image: "/assets/images/feature-images/Complex-Layout-Extraction.webp"
   },
   {
     title: "Production-Ready Accuracy",
@@ -24,6 +24,6 @@ export const features = [
       "No model training required.",
       "Designed for real-world deployment at scale."
     ],
-    image: "/images/feature3.png"
+    image: "/assets/images/feature-images/visual_grounding-1.webp"
   }
 ];
