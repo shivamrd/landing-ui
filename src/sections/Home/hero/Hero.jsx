@@ -2,7 +2,7 @@ const Hero = () => {
   return (
    <section className="hero-section d-flex align-items-center">
         <div className="container text-center hero-wrapper">
-
+            
           {/* SMALL TOP LINE */}
           <p className="hero-topline">
             Turn Any Document Into

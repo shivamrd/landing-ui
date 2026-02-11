@@ -1,8 +1,8 @@
-import "./Navbar.css"
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
-      <div className="container">
+    <div className="container-fluid px-4">
+
 
         {/* Logo */}
         <a className="navbar-brand fw-semibold fs-4" href="#">

@@ -1,8 +1,9 @@
- import "./Footer.css";
+
 const Footer = () => {
   return (
     <footer className="footer bg-dark text-light pt-5">
-      <div className="container">
+     <div className="container-fluid px-4">
+
         <div className="row">
 
           {/* Left side: Logo & Info */}

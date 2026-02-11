@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { features } from "../../../data/features";
-import "./AutoFeatures.css";
+
 
 const AutoFeatures = () => {
   const [activeIndex, setActiveIndex] = useState(0);
