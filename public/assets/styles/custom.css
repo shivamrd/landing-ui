@@ -529,3 +529,142 @@ hr.bg-secondary {
         transform: scale(1);
     }
 }
+
+/*FAQ PART*/
+/* SECTION BACKGROUND */
+.faq-section {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #0b1220 0%, #0e1628 100%);
+  color: white;
+}
+
+/* LEFT SIDE */
+.faq-left {
+  padding-right: 40px;
+}
+
+.faq-small {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 25px;
+  font-weight: 600;
+  color: #4da3ff;
+  margin-bottom: 20px;
+}
+
+/* Small Blue Symbol */
+.faq-icon-symbol {
+  width: 10px;
+  height: 10px;
+  background: #4da3ff;
+  border-radius: 3px;
+
+  box-shadow: 0 0 10px rgba(77, 163, 255, 0.6);
+}
+
+
+
+.faq-heading {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.gradient-word {
+  background: linear-gradient(90deg, #4da3ff, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.faq-desc {
+  color: #9ca3af;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.contact-btn {
+  background: #2563eb;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #3b82f6;
+}
+
+/* RIGHT SIDE */
+/* RIGHT SIDE CONTAINER */
+.faq-right {
+  padding-left: 30px;
+}
+
+/* CARD STYLE (LandingAI style) */
+.faq-box {
+  background: linear-gradient(
+    145deg,
+    rgba(25, 40, 70, 0.85),
+    rgba(15, 25, 45, 0.95)
+  );
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 0 transparent;
+}
+
+/* HOVER GLOW */
+.faq-box:hover {
+  border: 1px solid rgba(77, 163, 255, 0.4);
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.25);
+  transform: translateY(-2px);
+}
+
+/* ACTIVE CARD */
+.faq-box.active {
+  border: 1px solid rgba(77, 163, 255, 0.6);
+  box-shadow: 0 0 35px rgba(37, 99, 235, 0.35);
+}
+
+/* TITLE ROW */
+.faq-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 17px;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+}
+
+/* ICON */
+.faq-icon {
+  font-size: 22px;
+  color: #4da3ff;
+  transition: 0.3s ease;
+}
+
+/* CONTENT */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.faq-content.show {
+  margin-top: 18px;
+  max-height: 500px;
+}
