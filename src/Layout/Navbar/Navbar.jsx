@@ -1,3 +1,7 @@
+import { Link } from "react-router-dom";
+
+
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
@@ -146,7 +150,10 @@ const Navbar = () => {
 
           {/* ================= RIGHT BUTTONS ================= */}
           <div className="d-flex gap-3">
-            <a className="btn btn-outline-light" href="#login">Login</a>
+            
+            <Link to="/login" className="btn btn-outline-light">
+              Login
+            </Link>
             <button className="btn btn-outline-light">Get in Touch</button>
             <button className="btn btn-primary landing-btn">
               Start for Free

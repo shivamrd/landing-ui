@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
    <section className="hero-section d-flex align-items-center">
@@ -21,9 +23,9 @@ const Hero = () => {
 
           {/* BUTTONS */}
           <div className="hero-buttons mt-5">
-            <button className="btn btn-primary hero-btn-primary">
+            <Link to="/login" className="btn btn-primary hero-btn-primary">
               Start for Free
-            </button>
+            </Link>
             <button className="btn btn-outline-light hero-btn-secondary">
               Talk to an Expert
             </button>
