@@ -141,8 +141,9 @@ const Navbar = () => {
 
                 <li><a className="landing-simple-item" href="#about">ℹ️ About Us</a></li>
                 <li><a className="landing-simple-item" href="#careers">🚀 Careers</a></li>
-                <li><a className="landing-simple-item" href="#contact">📞 Contact Us</a></li>
-
+                {/* <li><a className="landing-simple-item" href="#contact">📞 Contact Us</a></li> */}
+                <li><Link to="/contact-us" className="landing-simple-item" href="#contact">📞 Contact Us</Link></li>
+                
               </ul>
             </li>
 
