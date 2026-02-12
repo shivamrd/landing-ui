@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
 
-
-
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
-    <div className="container-fluid px-4">
-
-
-       <a className="navbar-brand fw-semibold fs-4 d-flex align-items-center" href="#">
-  <span className="bg-primary text-white rounded-circle d-inline-flex justify-content-center align-items-center me-2"
-        style={{ width: "40px", height: "40px", fontWeight: "bold" }}>
-    T
-  </span>
-  Techno<span className="text-primary">Hunk</span>
-</a>
-
+      <div className="container-fluid px-4">
+        <Link
+          to="/"
+          className="navbar-brand fw-semibold fs-4 d-flex align-items-center"
+        >
+          <span
+            className="bg-primary text-white rounded-circle d-inline-flex justify-content-center align-items-center me-2"
+            style={{ width: "40px", height: "40px", fontWeight: "bold" }}
+          >
+            T
+          </span>
+          Techno<span className="text-primary">Hunk</span>
+        </Link>
 
         {/* Mobile Toggle */}
         <button
@@ -28,9 +28,7 @@ const Navbar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navMenu">
-
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-
             {/* ================= INDUSTRIES ================= */}
             <li className="nav-item dropdown landing-dropdown">
               <a
@@ -77,10 +75,8 @@ const Navbar = () => {
                     </div>
                   </a>
                 </li>
-
               </ul>
             </li>
-
 
             {/* ================= RESOURCES ================= */}
             <li className="nav-item dropdown landing-dropdown">
@@ -101,16 +97,38 @@ const Navbar = () => {
               >
                 <li className="dropdown-header">RESOURCES</li>
 
-                <li><a className="landing-simple-item" href="#docs">📘 Docs</a></li>
-                <li><a className="landing-simple-item" href="#blogs">📰 Blogs</a></li>
-                <li><a className="landing-simple-item" href="#webinars">🎤 Webinars</a></li>
-                <li><a className="landing-simple-item" href="#trust">🔒 Trust Center</a></li>
-                <li><a className="landing-simple-item" href="#builder">👨‍💻 Become a Builder</a></li>
-                <li><a className="landing-simple-item" href="#discord">💬 Discord</a></li>
-
+                <li>
+                  <a className="landing-simple-item" href="#docs">
+                    📘 Docs
+                  </a>
+                </li>
+                <li>
+                  <a className="landing-simple-item" href="#blogs">
+                    📰 Blogs
+                  </a>
+                </li>
+                <li>
+                  <a className="landing-simple-item" href="#webinars">
+                    🎤 Webinars
+                  </a>
+                </li>
+                <li>
+                  <a className="landing-simple-item" href="#trust">
+                    🔒 Trust Center
+                  </a>
+                </li>
+                <li>
+                  <a className="landing-simple-item" href="#builder">
+                    👨‍💻 Become a Builder
+                  </a>
+                </li>
+                <li>
+                  <a className="landing-simple-item" href="#discord">
+                    💬 Discord
+                  </a>
+                </li>
               </ul>
             </li>
-
 
             {/* ================= PRICING ================= */}
             <li className="nav-item">
@@ -118,7 +136,6 @@ const Navbar = () => {
                 Pricing
               </a>
             </li>
-
 
             {/* ================= COMPANY ================= */}
             <li className="nav-item dropdown landing-dropdown">
@@ -139,6 +156,21 @@ const Navbar = () => {
               >
                 <li className="dropdown-header">COMPANY</li>
 
+                <li>
+                  <Link to="/about-us" className="landing-simple-item">
+                    ℹ️ About Us
+                  </Link>
+                </li>
+                <li>
+                  <a className="landing-simple-item" href="#careers">
+                    🚀 Careers
+                  </a>
+                </li>
+                <li>
+                  <a className="landing-simple-item" href="#contact">
+                    📞 Contact Us
+                  </a>
+                </li>
                 <li><a className="landing-simple-item" href="#about">ℹ️ About Us</a></li>
                 <li><a className="landing-simple-item" href="#careers">🚀 Careers</a></li>
                 {/* <li><a className="landing-simple-item" href="#contact">📞 Contact Us</a></li> */}
@@ -146,12 +178,10 @@ const Navbar = () => {
                 
               </ul>
             </li>
-
           </ul>
 
           {/* ================= RIGHT BUTTONS ================= */}
           <div className="d-flex gap-3">
-            
             <Link to="/login" className="btn btn-outline-light">
               Login
             </Link>
@@ -160,7 +190,6 @@ const Navbar = () => {
               Start for Free
             </button>
           </div>
-
         </div>
       </div>
     </nav>
@@ -168,4 +197,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
