@@ -973,9 +973,6 @@ hr.bg-secondary {
 
 
 /* About.css */
-/* ===============================
-   HERO SECTION
-
 .about-hero-section {
   min-height: 100vh;
   padding: 120px 0 80px;
@@ -1024,7 +1021,7 @@ hr.bg-secondary {
 }
 
 /* ===============================
-   TECH MARQUEE
+   TECH MARQUEE */
 
 .about-tech-marquee {
   background: #053d91;
@@ -1055,7 +1052,7 @@ hr.bg-secondary {
 
 /* ===============================
    IMPACT SECTION
-
+*/
 .about-stat-card {
   background: #ffffff;
   border-radius: 16px;
@@ -1076,7 +1073,7 @@ hr.bg-secondary {
 
 /* ===============================
    CORE FOCUS CARDS
-
+*/
 .about-focus-card {
   background: #ffffff;
   border-radius: 18px;
@@ -1110,7 +1107,7 @@ hr.bg-secondary {
 }
 
 /* ===============================
-   LEADERSHIP SECTION
+   LEADERSHIP SECTION */
 
 .about-leader-card {
   background: #ffffff;
@@ -1154,7 +1151,7 @@ hr.bg-secondary {
 
 /* ===============================
    FOOTER FIX (OPTIONAL)
-
+*/
 footer {
   background: #0b1220;
   color: #94a3b8;
@@ -1176,7 +1173,7 @@ footer a:hover {
 }
 
 /* ===============================
-   RESPONSIVE TWEAKS
+   RESPONSIVE TWEAKS*/
 
 @media (max-width: 768px) {
   .about-hero-section {
@@ -1187,9 +1184,8 @@ footer a:hover {
     padding: 32px;
   }
 }
-/*
 
-US PAGE*/
+/*Contact US PAGE*/
 
 /* ========================= */
 /* WRAPPER BACKGROUND */
@@ -1200,7 +1196,8 @@ US PAGE*/
   color: #ffffff;
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
-  padding: 60px 80px;   /* 👈 pushes content away from edges */
+  padding: 60px 80px;
+  /* 👈 pushes content away from edges */
 
 }
 
@@ -1209,10 +1206,11 @@ US PAGE*/
 /* ========================= */
 
 .left-side {
-  padding: 120px 100px 40px 100px; 
+  padding: 120px 100px 40px 100px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;   /* push content to top */
+  justify-content: flex-start;
+  /* push content to top */
 }
 
 
@@ -1307,13 +1305,13 @@ input[type="checkbox"] {
   accent-color: #3b82f6;
 }
 
- .mb-3 div {
+.mb-3 div {
   margin-bottom: 6px;
   font-size: 14px;
   color: #cbd5e1;
 }
 
-.form-card  {
+.form-card {
   margin-top: 120px;
   margin-bottom: 70px;
   font-size: 14px;
