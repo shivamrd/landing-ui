@@ -4,10 +4,14 @@ const Navbar = () => {
     <div className="container-fluid px-4">
 
 
-        {/* Logo */}
-        <a className="navbar-brand fw-semibold fs-4" href="#">
-          Techno<span className="text-primary">Hunk</span>
-        </a>
+       <a className="navbar-brand fw-semibold fs-4 d-flex align-items-center" href="#">
+  <span className="bg-primary text-white rounded-circle d-inline-flex justify-content-center align-items-center me-2"
+        style={{ width: "40px", height: "40px", fontWeight: "bold" }}>
+    T
+  </span>
+  Techno<span className="text-primary">Hunk</span>
+</a>
+
 
         {/* Mobile Toggle */}
         <button
