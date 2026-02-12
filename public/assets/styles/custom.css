@@ -1,4 +1,3 @@
-
 /* REMOVE BOOTSTRAP SIDE GAPS */
 .container,
 .container-fluid {
@@ -109,88 +108,88 @@ body {
 
 /* Logos.css */
 .logos-section {
-    background-color: #0b1120;
-    padding: 80px 0;
-    overflow: hidden;
-    width: 100%;
+  background-color: #0b1120;
+  padding: 80px 0;
+  overflow: hidden;
+  width: 100%;
 }
 
 .logos-title {
-    font-size: 0.9rem;
-    /* Increased font size */
-    font-weight: 700;
-    letter-spacing: 0.25em;
-    /* Wide tracking for a modern look */
-    color: #ffffff;
-    /* Set to pure white */
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: 0.9rem;
+  /* Increased font size */
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  /* Wide tracking for a modern look */
+  color: #ffffff;
+  /* Set to pure white */
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logos-title span {
-    background: rgba(255, 255, 255, 0.05);
-    /* Subtle white glass effect */
-    padding: 6px 16px;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  /* Subtle white glass effect */
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo-slider {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    /* Soft fade edges using mask-image */
-    mask-image: linear-gradient(to right,
-            transparent,
-            black 15%,
-            black 85%,
-            transparent);
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  /* Soft fade edges using mask-image */
+  mask-image: linear-gradient(to right,
+      transparent,
+      black 15%,
+      black 85%,
+      transparent);
 }
 
 .logo-track {
-    display: flex;
-    width: max-content;
-    flex-wrap: nowrap;
-    animation: scroll 35s linear infinite;
+  display: flex;
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 35s linear infinite;
 }
 
 .logo-track:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .logo-item {
-    flex: 0 0 auto;
-    width: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 50px;
+  flex: 0 0 auto;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
 }
 
 .logo-svg {
-    width: 100%;
-    height: auto;
-    max-height: 35px;
-    filter: brightness(0) invert(1) opacity(0.35);
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+  height: auto;
+  max-height: 35px;
+  filter: brightness(0) invert(1) opacity(0.35);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .logo-item:hover .logo-svg {
-    /* Hover state: Brighter and subtle lift */
-    filter: brightness(0) invert(1) opacity(0.9);
-    transform: translateY(-3px);
+  /* Hover state: Brighter and subtle lift */
+  filter: brightness(0) invert(1) opacity(0.9);
+  transform: translateY(-3px);
 }
 
 @keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
+  from {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(-50%);
-    }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 
@@ -342,25 +341,27 @@ hr.bg-secondary {
   border-radius: 14px;
   border: 1px solid #e5e7eb;
   background: #f9fafb;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
   margin-top: 12px;
 }
+
 .landing-menu-resources {
   width: 42px;
   padding: 16px;
   border-radius: 14px;
   border: 1px solid #e5e7eb;
   background: #f9fafb;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
   margin-top: 12px;
 }
+
 .landing-menu-company {
   width: 42px;
   padding: 16px;
   border-radius: 14px;
   border: 1px solid #e5e7eb;
   background: #f9fafb;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
   margin-top: 12px;
 }
 
@@ -425,107 +426,107 @@ hr.bg-secondary {
 /*AutoFeatures.css*/
 /* AUTO FEATURES SECTION */
 .auto-feature-section {
-    background-color: #0b1120;
-    min-height: 800px;
-    display: flex;
-    align-items: center;
+  background-color: #0b1120;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
 }
 
 /* New Section Header Styling */
 .main-unlock-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #ffffff;
-    letter-spacing: -0.02em;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.02em;
 }
 
 .main-unlock-subtitle {
-    font-size: 1.2rem;
-    color: #94a3b8;
-    max-width: 850px;
-    line-height: 1.6;
+  font-size: 1.2rem;
+  color: #94a3b8;
+  max-width: 850px;
+  line-height: 1.6;
 }
 
 /* Feature Specific Content */
 .feature-main-title {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .feature-description-list li {
-    position: relative;
-    padding-left: 1.5rem;
-    font-size: 1.1rem;
-    color: #94a3b8;
-    list-style: none;
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  color: #94a3b8;
+  list-style: none;
 }
 
 .feature-description-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #3b82f6;
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
 }
 
 /* Image Container - THE "FILLED" LOOK */
 .image-container-gradient {
-    /* Vibrant branding gradient from LandingAI ref */
-    background: linear-gradient(135deg, #114b4c 0%, #061a2e 100%);
-    border-radius: 32px;
-    aspect-ratio: 16 / 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  /* Vibrant branding gradient from LandingAI ref */
+  background: linear-gradient(135deg, #114b4c 0%, #061a2e 100%);
+  border-radius: 32px;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
 .image-wrapper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .main-feature-img {
-    width: 100%;
-    height: 100%;
-    /* Key: This makes the image fill the entire blue box */
-    object-fit: cover;
-    object-position: center;
+  width: 100%;
+  height: 100%;
+  /* Key: This makes the image fill the entire blue box */
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Dots Navigation */
 .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #334155;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  width: 10px;
+  height: 10px;
+  background-color: #334155;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .dot.active {
-    background-color: #3b82f6;
-    width: 32px;
-    /* Pill shape */
-    border-radius: 100px;
+  background-color: #3b82f6;
+  width: 32px;
+  /* Pill shape */
+  border-radius: 100px;
 }
 
 /* Animation */
 .fade-in {
-    animation: fadeInSlide 0.8s ease-out forwards;
+  animation: fadeInSlide 0.8s ease-out forwards;
 }
 
 @keyframes fadeInSlide {
-    from {
-        opacity: 0;
-        transform: scale(1.02);
-    }
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
 
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
