@@ -189,9 +189,9 @@ const Navbar = () => {
             <Link to="/contact-us" className="btn btn-outline-light">
               Get in Touch
             </Link>
-            <button className="btn btn-primary landing-btn">
+             <Link to="/login" className="btn btn-primary landing-btn">
               Start for Free
-            </button>
+            </Link>
           </div>
         </div>
       </div>
