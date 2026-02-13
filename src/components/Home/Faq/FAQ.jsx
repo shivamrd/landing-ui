@@ -1,26 +1,27 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const faqData = [
   {
     question: "How is ADE different from OCR + LLM approaches?",
     answer:
-      "Most OCR + LLM stacks treat documents as plain text, then ask an LLM to guess structure. ADE preserves layout, tables, and headings with visual grounding and traceability."
+      "Most OCR + LLM stacks treat documents as plain text, then ask an LLM to guess structure. ADE preserves layout, tables, and headings with visual grounding and traceability.",
   },
   {
     question: "What document types does ADE support?",
     answer:
-      "ADE supports PDFs, scans, invoices, contracts, financial reports, tables, and complex multi-column enterprise documents."
+      "ADE supports PDFs, scans, invoices, contracts, financial reports, tables, and complex multi-column enterprise documents.",
   },
   {
     question: "What about data privacy and security?",
     answer:
-      "Enterprise-grade governance with auditability, deployment flexibility, and secure processing."
+      "Enterprise-grade governance with auditability, deployment flexibility, and secure processing.",
   },
   {
     question: "How does pricing work?",
     answer:
-      "Flexible subscription plans based on usage and document volume. Contact us for details."
-  }
+      "Flexible subscription plans based on usage and document volume. Contact us for details.",
+  },
 ];
 
 const FAQ = () => {
@@ -34,14 +35,12 @@ const FAQ = () => {
     <section className="faq-section">
       <div className="container">
         <div className="row align-items-start">
-
           {/* LEFT SIDE */}
           <div className="col-lg-5 faq-left">
             <div className="faq-small">
-  <span className="faq-icon-symbol"></span>
-  FAQs
-</div>
-
+              <span className="faq-icon-symbol"></span>
+              FAQs
+            </div>
 
             <h2 className="faq-heading">
               Questions, <span className="gradient-word">answered.</span>
@@ -51,9 +50,9 @@ const FAQ = () => {
               Didn’t spot what you needed? Contact us, we’re happy to help.
             </p>
 
-            <button className="contact-btn">
+            <Link to="/contact-us" className="contact-btn">
               Contact us →
-            </button>
+            </Link>
           </div>
 
           {/* RIGHT SIDE */}
@@ -66,22 +65,15 @@ const FAQ = () => {
               >
                 <div className="faq-title-row">
                   <span>{item.question}</span>
-                  <span className="faq-icon">
-                    {open === index ? "−" : "+"}
-                  </span>
+                  <span className="faq-icon">{open === index ? "−" : "+"}</span>
                 </div>
 
-                <div
-                  className={`faq-content ${
-                    open === index ? "show" : ""
-                  }`}
-                >
+                <div className={`faq-content ${open === index ? "show" : ""}`}>
                   {item.answer}
                 </div>
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </section>

@@ -1,8 +1,18 @@
 /* REMOVE BOOTSTRAP SIDE GAPS */
+/* UPDATED: Responsive Side Gaps */
 .container,
 .container-fluid {
-  padding-left: 40px !important;
-  padding-right: 40px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+@media (min-width: 768px) {
+
+  .container,
+  .container-fluid {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
 }
 
 /* BASE */
@@ -105,6 +115,35 @@ body {
   }
 }
 
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
+
+  .hero-topline {
+    font-size: 2rem !important;
+  }
+
+  .main-unlock-title {
+    font-size: 2rem !important;
+  }
+
+  .faq-heading {
+    font-size: 32px !important;
+  }
+
+  .left-side h1 {
+    font-size: 32px !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    /* Stack buttons on mobile */
+    width: 100%;
+  }
+}
+
 
 /* Logos.css */
 .logos-section {
@@ -189,6 +228,18 @@ body {
 
   to {
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-item {
+    width: 140px;
+    /* Smaller items for smaller screens */
+    padding: 0 20px;
+  }
+
+  .logo-svg {
+    max-height: 25px;
   }
 }
 
@@ -422,6 +473,18 @@ hr.bg-secondary {
   background: #eef2ff;
 }
 
+/* UPDATED: Responsive Dropdowns */
+.landing-menu,
+.landing-menu-resources,
+.landing-menu-company {
+  width: 90vw;
+  /* Takes 90% of screen width on mobile */
+  max-width: 420px;
+  /* Won't exceed 420px on desktop */
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  /* Centers the menu on mobile */
+}
 
 /*AutoFeatures.css*/
 /* AUTO FEATURES SECTION */
@@ -528,6 +591,19 @@ hr.bg-secondary {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container-gradient {
+    aspect-ratio: 4 / 3;
+    /* More square for mobile viewing */
+    margin-top: 2rem;
+  }
+
+  .feature-main-title {
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -1204,6 +1280,23 @@ footer a:hover {
 
 }
 
+/* UPDATED: Contact Page Mobile Fix */
+@media (max-width: 768px) {
+  .enterprise-wrapper {
+    padding: 40px 15px !important;
+  }
+
+  .left-side {
+    padding: 20px 0 !important;
+    text-align: center;
+  }
+
+  .form-card {
+    margin-top: 20px;
+    padding: 25px 20px;
+  }
+}
+
 /* ========================= */
 /* LEFT SIDE CONTENT */
 /* ========================= */
@@ -1359,5 +1452,106 @@ input[type="checkbox"] {
 
   .left-side h1 {
     font-size: 36px;
+  }
+}
+
+
+/* MOBILE COMPATIBILITY OVERRIDES */
+
+@media (max-width: 768px) {
+
+  /* 1. Reset the massive wrapper padding */
+  .enterprise-wrapper {
+    padding: 80px 15px !important;
+    /* Smaller top/bottom, minimal sides */
+  }
+
+  /* 2. Fix the left-side text alignment and size */
+  .left-side {
+    padding: 20px 0 !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side h1 {
+    font-size: 2.2rem !important;
+    /* Scale down the giant heading */
+    line-height: 1.1;
+  }
+
+  .left-side p,
+  .left-side .small-text,
+  .left-side .phone-text {
+    font-size: 1rem !important;
+    max-width: 100%;
+  }
+
+  /* 3. Ensure the form card doesn't overflow */
+  .form-card {
+    margin: 20px auto !important;
+    padding: 25px 20px !important;
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  /* 4. Fix Bootstrap container horizontal scroll */
+  .container,
+  .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    overflow: hidden;
+    /* Prevent horizontal jitter */
+  }
+
+  /* 5. Fix Hero Section font sizes */
+  .hero-title {
+    font-size: 2.8rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+}
+
+/* MOBILE COMPATIBILITY OVERRIDES */
+
+@media (max-width: 992px) {
+
+  /* 1. Reset absolute positioning so it stays within the screen */
+  .landing-menu,
+  .landing-menu-resources,
+  .landing-menu-company {
+    position: static !important;
+    /* Forces it to flow with the navbar */
+    width: 100% !important;
+    /* Takes full width of the mobile menu */
+    max-width: 100% !important;
+    transform: none !important;
+    /* Removes desktop centering/offsets */
+    box-shadow: none !important;
+    /* Optional: cleaner look for mobile stacks */
+    border: none !important;
+    background: rgba(255, 255, 255, 0.709) !important;
+    /* Subtle contrast */
+    margin-top: 10px !important;
+    padding: 10px !important;
+  }
+
+  /* 2. Fix the items inside so they don't feel cramped */
+  .landing-item {
+    padding: 12px 5px !important;
+  }
+
+  .menu-desc {
+    display: none;
+    /* Recommended: Hide descriptions on mobile to save space */
+  }
+
+  /* 3. Ensure the navbar can scroll if the menu is long */
+  .navbar-collapse {
+    max-height: 85vh;
+    overflow-y: auto;
   }
 }

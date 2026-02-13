@@ -186,7 +186,9 @@ const Navbar = () => {
             <Link to="/login" className="btn btn-outline-light">
               Login
             </Link>
-            <button className="btn btn-outline-light">Get in Touch</button>
+            <Link to="/contact-us" className="btn btn-outline-light">
+              Get in Touch
+            </Link>
             <button className="btn btn-primary landing-btn">
               Start for Free
             </button>
