@@ -1,5 +1,12 @@
 import MainLayout from "../Layout/MainLayout";
 import craftingIcon from "/assets/images/CraftingDigitalWorldWithAI.svg";
+import Redefining_Growth from "/assets/images/RedefiningGrowth.svg";
+import Technology_That_Powers from "/assets/images/TechnologyThatPowers.svg";
+import Intelligent_Systems_That_Scale from "/assets/images/IntelligentSystemsThatScale.svg";
+import Innovative_Minds from "/assets/images/InnovativeMinds.svg";
+import NextLevel_IT from "/assets/images/CraftingDigitalWorldWithAI.svg";
+import FutureReady_Transformation from "/assets/images/Future-ReadyTransformation.svg";
+import RobustMaintainable_IT from "/assets/images/Robust&MaintainableIT.svg";
 import person from "/assets/images/images.webp";
 
 const About = () => {
@@ -18,13 +25,29 @@ const About = () => {
       icon: craftingIcon,
       type: "image",
     },
-    { title: "Redefining Growth", icon: "bi-graph-up-arrow" },
-    { title: "Technology That Powers", icon: "bi-lightning-charge" },
-    { title: "Intelligent Systems That Scale", icon: "bi-diagram-3" },
-    { title: "Innovative Minds", icon: "bi-lightbulb" },
-    { title: "Next-Level IT", icon: "bi-layers" },
-    { title: "Future-Ready Transformation", icon: "bi-rocket-takeoff" },
-    { title: "Robust & Maintainable IT", icon: "bi-shield-check" },
+    { title: "Redefining Growth", icon: Redefining_Growth, type: "image" },
+    {
+      title: "Technology That Powers",
+      icon: Technology_That_Powers,
+      type: "image",
+    },
+    {
+      title: "Intelligent Systems That Scale",
+      icon: Intelligent_Systems_That_Scale,
+      type: "image",
+    },
+    { title: "Innovative Minds", icon: Innovative_Minds, type: "image" },
+    { title: "Next-Level IT", icon: NextLevel_IT, type: "image" },
+    {
+      title: "Future-Ready Transformation",
+      icon: FutureReady_Transformation,
+      type: "image",
+    },
+    {
+      title: "Robust & Maintainable IT",
+      icon: RobustMaintainable_IT,
+      type: "image",
+    },
   ];
 
   const leaders = [
@@ -116,7 +139,16 @@ const About = () => {
                 <div key={i} className="col-md-3 col-sm-6">
                   <div className="about-focus-card text-center">
                     <div className="about-icon-wrap mb-3">
-                      <i className={`bi ${p.icon}`}></i>
+                      {/* Check if the icon is a custom image or a Bootstrap Icon class */}
+                      {p.type === "image" ? (
+                        <img
+                          src={p.icon}
+                          alt={p.title}
+                          style={{ width: "60px", height: "60px" }}
+                        />
+                      ) : (
+                        <i className={`bi ${p.icon}`}></i>
+                      )}
                     </div>
                     <h6 className="fw-semibold">{p.title}</h6>
                   </div>

@@ -1085,20 +1085,23 @@ hr.bg-secondary {
 }
 
 .about-focus-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
 }
 
 .about-icon-wrap {
-  width: 58px;
-  height: 58px;
-  background: #eaf2ff;
+  width: 80px;
+  height: 80px;
+  background-color: #e9f2ff;
+  /* Light blue background */
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  /* Size of the Bootstrap Icon */
   color: #0d6efd;
-  margin: 0 auto 14px;
+  /* Bootstrap Primary Blue */
 }
 
 .about-focus-card h6 {
@@ -1109,13 +1112,13 @@ hr.bg-secondary {
 /* ===============================
    LEADERSHIP SECTION */
 
-.about-leader-card {
-  background: #ffffff;
-  border-radius: 22px;
-  padding: 36px 24px;
+.about-focus-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   height: 100%;
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease;
+  transition: transform 0.3s ease;
 }
 
 .about-leader-card:hover {
