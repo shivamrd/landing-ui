@@ -1,11 +1,26 @@
 import React, { useState } from "react";
+import { loginUser } from "../api/auth";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
   e.preventDefault();
   console.log("Login button clicked");
+
+  
+  try {
+    const { data } = await loginUser(formData);
+
+    // Save token
+    localStorage.setItem("token", data.access_token);
+
+    alert("Login Successful!");
+    console.log(data);
+  } catch (error) {
+    console.log(error.response?.data);
+    alert("Login Failed");
+  }
 };
 
 

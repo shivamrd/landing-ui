@@ -1,13 +1,25 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { registerUser } from "../api/auth";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Register clicked");
-  };
+
+
+    try {
+    const { data } = await registerUser(formData);
+    alert("Registration Successful!");
+    console.log(data);
+  } catch (error) {
+    console.log(error.response?.data);
+    alert("Registration Failed");
+  }
+    };
+  
 
   return (
     <div className="auth-wrapper">
