@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   return (
@@ -182,6 +183,8 @@ const Navbar = () => {
           </ul>
 
           {/* ================= RIGHT BUTTONS ================= */}
+
+          {/* <ThemeToggle /> */}
           <div className="d-flex gap-3">
             <Link to="/login" className="btn btn-outline-light">
               Login

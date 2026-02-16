@@ -59,6 +59,7 @@ body {
 /* GRADIENT TEXT */
 .gradient-text {
   background: linear-gradient(90deg, #3b82f6, #22c55e);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -102,20 +103,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* ANIMATION */
-@keyframes heroFade {
-  from {
-    opacity: 0;
-    transform: translateY(35px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive Typography */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem !important;
@@ -143,6 +130,22 @@ body {
     width: 100%;
   }
 }
+
+/* ANIMATION */
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Typography */
+
 
 
 /* Logos.css */
@@ -547,6 +550,19 @@ hr.bg-secondary {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 768px) {
+  .image-container-gradient {
+    aspect-ratio: 4 / 3;
+    /* More square for mobile viewing */
+    margin-top: 2rem;
+  }
+
+  .feature-main-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
 .image-wrapper {
   width: 100%;
   height: 100%;
@@ -594,18 +610,7 @@ hr.bg-secondary {
   }
 }
 
-@media (max-width: 768px) {
-  .image-container-gradient {
-    aspect-ratio: 4 / 3;
-    /* More square for mobile viewing */
-    margin-top: 2rem;
-  }
 
-  .feature-main-title {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-}
 
 /*FAQ PART*/
 /* SECTION BACKGROUND */
@@ -652,8 +657,14 @@ hr.bg-secondary {
 
 .gradient-word {
   background: linear-gradient(90deg, #4da3ff, #22d3ee);
+  /* Standard property for future-proofing and modern browsers */
+  background-clip: text;
+  /* Vendor-prefixed versions for current browser support */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  /* Optional: Fallback color for browsers that don't support gradients */
+  color: #4da3ff;
 }
 
 .faq-desc {
@@ -921,6 +932,19 @@ hr.bg-secondary {
   z-index: 2;
 }
 
+/* Responsive */
+@media (max-width: 992px) {
+  .auth-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .auth-left {
+    display: none;
+  }
+}
+
+
 /* ================= LEFT SIDE ================= */
 
 .auth-left {
@@ -1035,17 +1059,6 @@ hr.bg-secondary {
   color: #9ca3af;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .auth-container {
-    flex-direction: column;
-    width: 90%;
-  }
-
-  .auth-left {
-    display: none;
-  }
-}
 
 
 /* About.css */
@@ -1063,6 +1076,16 @@ hr.bg-secondary {
       transparent 1px,
       transparent 38px);
   padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+  .about-hero-section {
+    padding: 80px 0 70px;
+  }
+
+  .about-glass-card {
+    padding: 32px;
+  }
 }
 
 .about-hero-section h1 {
@@ -1254,15 +1277,7 @@ footer a:hover {
 /* ===============================
    RESPONSIVE TWEAKS*/
 
-@media (max-width: 768px) {
-  .about-hero-section {
-    padding: 80px 0 70px;
-  }
 
-  .about-glass-card {
-    padding: 32px;
-  }
-}
 
 /*Contact US PAGE*/
 
