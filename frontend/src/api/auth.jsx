@@ -2,12 +2,13 @@ import axios from "axios";
 
 const API = axios.create({
   baseURL: "http://127.0.0.1:8000",
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 
 // Register
-export const registerUser = (formData) =>
-  API.post("/register", formData);
+export const registerUser = (formData) => API.post("/register", formData);
 
 // Login
-export const loginUser = (formData) =>
-  API.post("/login", formData);
+export const loginUser = (formData) => API.post("/login", formData);

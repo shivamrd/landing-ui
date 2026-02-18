@@ -23,13 +23,11 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 # 🔐 Hash Password (Safe from 72 byte bcrypt issue)
 def hash_password(password: str):
     # Convert to SHA256 first (industry trick)
-    password = hashlib.sha256(password.encode()).hexdigest()
     return pwd_context.hash(password)
 
 
 # 🔐 Verify Password
 def verify_password(plain_password: str, hashed_password: str):
-    plain_password = hashlib.sha256(plain_password.encode()).hexdigest()
     return pwd_context.verify(plain_password, hashed_password)
 
 
