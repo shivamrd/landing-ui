@@ -5,7 +5,6 @@ import { registerUser } from "../api/auth";
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
 
-  // CHANGED: 'fullName' is now 'name' to match your backend requirements
   const [formData, setFormData] = useState({
     name: "",
     email: "",

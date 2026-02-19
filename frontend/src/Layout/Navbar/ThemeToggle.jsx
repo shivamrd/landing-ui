@@ -2,31 +2,26 @@ import React, { useEffect, useState } from "react";
 
 const ThemeToggle = () => {
   const [isLight, setIsLight] = useState(
-    localStorage.getItem("theme") === "light",
+    () => localStorage.getItem("theme") === "light",
   );
 
   useEffect(() => {
-    if (isLight) {
-      document.documentElement.setAttribute("data-theme", "light");
-      localStorage.setItem("theme", "light");
-    } else {
-      document.documentElement.removeAttribute("data-theme");
-      localStorage.setItem("theme", "dark");
-    }
+    const theme = isLight ? "light" : "dark";
+    // Always SET the attribute — never remove it
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
   }, [isLight]);
+
+  // Apply saved theme on first render (before any toggle)
+  useEffect(() => {
+    const saved = localStorage.getItem("theme") || "dark";
+    document.documentElement.setAttribute("data-theme", saved);
+  }, []);
 
   return (
     <button
-      onClick={() => setIsLight(!isLight)}
-      className="theme-btn"
-      style={{
-        padding: "8px 15px",
-        borderRadius: "20px",
-        border: "1px solid var(--border-subtle)",
-        background: "var(--bg-card)",
-        color: "var(--text-main)",
-        cursor: "pointer",
-      }}
+      onClick={() => setIsLight((prev) => !prev)}
+      className="theme-toggle me-3"
     >
       {isLight ? "🌙 Dark Mode" : "☀️ Light Mode"}
     </button>

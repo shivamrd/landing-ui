@@ -3,7 +3,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+    <nav className="navbar navbar-expand-lg py-3 fixed-top landing-navbar">
       <div className="container-fluid px-4">
         <Link
           to="/"
@@ -15,12 +15,13 @@ const Navbar = () => {
           >
             T
           </span>
-          Techno<span className="text-primary">Hunk</span>
+          <span className="navbar-brand-text">Techno</span>
+          <span className="text-primary">Hunk</span>
         </Link>
 
         {/* Mobile Toggle */}
         <button
-          className="navbar-toggler"
+          className="navbar-toggler landing-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navMenu"
@@ -30,7 +31,7 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navMenu">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-            {/* ================= INDUSTRIES ================= */}
+            {/* INDUSTRIES */}
             <li className="nav-item dropdown landing-dropdown">
               <a
                 className="nav-link dropdown-toggle landing-nav-link"
@@ -42,13 +43,11 @@ const Navbar = () => {
               >
                 Industries
               </a>
-
               <ul
                 className="dropdown-menu landing-menu"
                 aria-labelledby="industriesDropdown"
               >
                 <li className="dropdown-header">SOLUTIONS</li>
-
                 <li>
                   <a className="landing-item" href="#finance">
                     <span className="menu-icon">🏦</span>
@@ -62,7 +61,6 @@ const Navbar = () => {
                     </div>
                   </a>
                 </li>
-
                 <li>
                   <a className="landing-item" href="#health">
                     <span className="menu-icon">🏥</span>
@@ -79,7 +77,7 @@ const Navbar = () => {
               </ul>
             </li>
 
-            {/* ================= RESOURCES ================= */}
+            {/* RESOURCES */}
             <li className="nav-item dropdown landing-dropdown">
               <a
                 className="nav-link dropdown-toggle landing-nav-link"
@@ -91,13 +89,11 @@ const Navbar = () => {
               >
                 Resources
               </a>
-
               <ul
                 className="dropdown-menu landing-menu-resources"
                 aria-labelledby="resourcesDropdown"
               >
                 <li className="dropdown-header">RESOURCES</li>
-
                 <li>
                   <a className="landing-simple-item" href="#docs">
                     📘 Docs
@@ -131,14 +127,14 @@ const Navbar = () => {
               </ul>
             </li>
 
-            {/* ================= PRICING ================= */}
+            {/* PRICING */}
             <li className="nav-item">
               <a className="nav-link landing-nav-link" href="#pricing">
                 Pricing
               </a>
             </li>
 
-            {/* ================= COMPANY ================= */}
+            {/* COMPANY */}
             <li className="nav-item dropdown landing-dropdown">
               <a
                 className="nav-link dropdown-toggle landing-nav-link"
@@ -150,13 +146,11 @@ const Navbar = () => {
               >
                 Company
               </a>
-
               <ul
                 className="dropdown-menu landing-menu-company"
                 aria-labelledby="companyDropdown"
               >
                 <li className="dropdown-header">COMPANY</li>
-
                 <li>
                   <Link to="/about-us" className="landing-simple-item">
                     ℹ️ About Us
@@ -167,14 +161,8 @@ const Navbar = () => {
                     🚀 Careers
                   </a>
                 </li>
-
-                {/* <li><a className="landing-simple-item" href="#contact">📞 Contact Us</a></li> */}
                 <li>
-                  <Link
-                    to="/contact-us"
-                    className="landing-simple-item"
-                    href="#contact"
-                  >
+                  <Link to="/contact-us" className="landing-simple-item">
                     📞 Contact Us
                   </Link>
                 </li>
@@ -182,17 +170,16 @@ const Navbar = () => {
             </li>
           </ul>
 
-          {/* ================= RIGHT BUTTONS ================= */}
-
-          {/* <ThemeToggle /> */}
+          {/* RIGHT BUTTONS */}
+          <ThemeToggle />
           <div className="d-flex gap-3">
-            <Link to="/login" className="btn btn-outline-light">
+            <Link to="/login" className="btn navbar-btn-outline">
               Login
             </Link>
-            <Link to="/contact-us" className="btn btn-outline-light">
+            <Link to="/contact-us" className="btn navbar-btn-outline">
               Get in Touch
             </Link>
-             <Link to="/login" className="btn btn-primary landing-btn">
+            <Link to="/login" className="btn btn-primary landing-btn">
               Start for Free
             </Link>
           </div>
